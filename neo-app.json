@@ -1,0 +1,34 @@
+{
+    "welcomeFile": "/webapp/index.html",
+    "routes": [
+      {
+        "path": "/resources",
+        "target": {
+          "type": "service",
+          "name": "sapui5",
+          "entryPath": "/resources",
+          "version": "snapshot"
+        },
+        "description": "SAPUI5 Resources"
+      },
+      {
+        "path": "/csp",
+        "target": {
+          "type": "destination",
+          "name": "SOAP",
+          "entryPath": "/csp",
+          "version": "snapshot"
+        },
+        "description": "SOAP Service Call Destination connection"
+      },
+      {
+        "path": "/test-resources",
+        "target": {
+          "type": "service",
+          "name": "sapui5",
+          "entryPath": "/test-resources"
+        },
+        "description": "SAPUI5 Test Resources"
+      }
+    ]
+  }
