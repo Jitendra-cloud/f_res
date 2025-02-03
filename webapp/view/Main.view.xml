@@ -1,6 +1,23 @@
-<mvc:View controllerName="djp.soap.esoapcalls.controller.Main"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="djp.soap.esoapcalls.controller.Main"><Page id="page" title="{i18n>title}">
+    <content>
+        <VBox width="100%" direction="Column" id="vbox0">
+            <items>
+                <HBox width="100%" id="hbox0">
+                    <items>
+                        <Label text="Number_1" width="100%" id="label0"/>
+                        <Input xmlns="sap.m" value="Value" id="num1" type="Number"/>
+                    </items>
+                </HBox>
+                <HBox xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="100%" id="hbox0_copy">
+                    <items>
+                        <Label text="Number_2" width="100%" id="label1"/>
+                        <Input xmlns="sap.m" value="Value" id="num2" type="Number"/>
+                        </items>
+                    
+                </HBox>
+                <Button xmlns="sap.m" text="Call SOAP" id="button0" press="onCallSOAP"/>
+            </items>
+        </VBox>
+    </content>
     </Page>
 </mvc:View>

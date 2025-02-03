@@ -5,6 +5,10 @@ sap.ui.define([
 
     return Controller.extend("djp.soap.esoapcalls.controller.Main", {
         onInit() {
+        },
+
+        onCallSOAP(oEvent) {
+
         }
     });
 });
