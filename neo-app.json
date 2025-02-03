@@ -12,11 +12,11 @@
         "description": "SAPUI5 Resources"
       },
       {
-        "path": "/csp",
+        "path": "/v3",
         "target": {
           "type": "destination",
-          "name": "SOAP",
-          "entryPath": "/csp",
+          "name": "Northwind",
+          "entryPath": "/v3",
           "version": "snapshot"
         },
         "description": "SOAP Service Call Destination connection"

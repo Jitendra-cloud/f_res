@@ -18,6 +18,8 @@
                 <Button xmlns="sap.m" text="Call SOAP" id="button0" press="onCallSOAP"/>
             </items>
         </VBox>
+        <Button id="button" text="Call REST" press="onRESTCall" ></Button>
+        <List id="restdata" ></List>
     </content>
     </Page>
 </mvc:View>

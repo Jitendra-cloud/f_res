@@ -1,15 +1,14 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller"
-], (Controller) => {
+    "sap/ui/core/mvc/Controller", "sap/m/MessageBox"
+], (Controller, MessageBox) => {
     "use strict";
 
     return Controller.extend("djp.soap.esoapcalls.controller.Main", {
-        onInit() {
-        },
-
+    
         resSuccess(data, status, req) {
             debugger;
         },
+
         resError(data, status, req){
             debugger;
         },
@@ -34,6 +33,26 @@ sap.ui.define([
                 error: this.resError
             })
             //Step 4: Define the Callbacks for response (success or Error)
+        },
+
+        successREST(data, status, req) {
+            debugger;
+        },
+
+        errorREST(data, status, req){
+            debugger;
+        },
+        onRESTCall() {
+            var sURL = "/v3/Northwind/Northwind.svc/Customers?$format=json"
+            $.ajax({
+                type: "GET",
+                url: sURL,
+                contentType: "application/json",
+                dataType: "json",
+                success: [this.successREST, this],
+                error: [this.errorREST, this]
+            })
         }
+
     });
 });
